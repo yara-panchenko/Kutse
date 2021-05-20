@@ -71,10 +71,10 @@ namespace Kutsee_Appp.Controllers
                 WebMail.SmtpServer = "smtp.gmail.com";
                 WebMail.SmtpPort = 587;
                 WebMail.EnableSsl = true;
-                WebMail.UserName = "aani66407@gmail.com";
-                WebMail.Password = "janika12345";
-                WebMail.From = "aani66407@gmail.com";
-                WebMail.Send("aani66407@gmail.com", "Vastus kutsele", guest.Name + " vastas " + ((guest.WillAttend ?? false) ? "tuleb peole " : "ei tule peole"));
+                WebMail.UserName = "e-mail";
+                WebMail.Password = "pass";
+                WebMail.From = "e-mail";
+                WebMail.Send("e-mail", "Vastus kutsele", guest.Name + " vastas " + ((guest.WillAttend ?? false) ? "tuleb peole " : "ei tule peole"));
                 ViewBag.Message = "Kiri on saatnud!";
             }
             catch (Exception)
